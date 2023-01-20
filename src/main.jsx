@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import ThemedSuspense from "./components/ThemedSuspense";
+import ThemedSuspense from "./Components/ThemedSuspense";
 import "./index.css";
 
 import { BrowserRouter as Router } from "react-router-dom";

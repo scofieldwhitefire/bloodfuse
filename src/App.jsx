@@ -1,7 +1,7 @@
 import { ClientJS } from "clientjs";
 import { Route, Routes } from "react-router";
-import ViewOnDesktop from "./components/ViewOnDesktop";
-import Home from "./pages/Home";
+import ViewOnDesktop from "./Components/ViewOnDesktop";
+import Home from "./Pages/Home";
 
 const App = () => {
   const client = new ClientJS();
