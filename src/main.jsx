@@ -1,11 +1,18 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
+import React, { Suspense } from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import ThemedSuspense from "./components/ThemedSuspense";
+import "./index.css";
 
-const root  = ReactDOM.createRoot(document.getElementById('admin'))
+import { BrowserRouter as Router } from "react-router-dom";
+
+const root = ReactDOM.createRoot(document.getElementById("admin"));
 root.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+    <Router>
+      <Suspense fallback={<ThemedSuspense />}>
+        <App />
+      </Suspense>
+    </Router>
+  </React.StrictMode>
+);
